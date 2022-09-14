@@ -12,3 +12,7 @@ def test_ascending_one():
 def test_ascending_two():
     output = print_ascending(2)
     assert output == """ *\n***\n"""
+
+def test_ascending_three():
+    output = print_ascending(3)
+    assert output == """  *\n ***\n*****\n"""
