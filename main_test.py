@@ -1,4 +1,4 @@
-from helper import print_ascending
+from helper import print_ascending, print_descending
 
 
 def test_ascending_zero():
@@ -16,3 +16,15 @@ def test_ascending_two():
 def test_ascending_three():
     output = print_ascending(3)
     assert output == """  *\n ***\n*****\n"""
+
+def test_descending_zero():
+    output = print_descending(0)
+    assert output == """"""
+
+def test_descending_one():
+    output = print_descending(1)
+    assert output == """*\n"""
+
+def test_descending_three():
+    output = print_descending(3)
+    assert output == """*****\n ***\n  *\n"""
