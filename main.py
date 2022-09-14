@@ -9,9 +9,12 @@ order = int(input("Select if you want your tree in ascending (1) or descending (
 
 print("Here is your tree \n")
 # we do it in ascending order
+
+
 if(order == 1):
     print(print_ascending(height))
 elif(order == 2):
     print(print_descending(height))
-    
+else:
+    print("Unsupported order. Please try again. ")
 
